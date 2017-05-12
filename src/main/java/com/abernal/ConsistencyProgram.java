@@ -1,16 +1,16 @@
-package com.abernal;
-
-import static com.abernal.util.Validator.*;
-import static com.abernal.util.ConsistencyChecker.*;
+package main.java.com.abernal;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import main.java.com.abernal.util.ConsistencyChecker;
 
 /**
+ * Determine if a list of phone numbers is consistent in the sense that no number is the prefix of another
+ * 
  * Created by abernal on 5/10/17.
  */
-public class Main {
+public class ConsistencyProgram {
     public static void main(String[] args){
 
         /**
@@ -57,7 +57,7 @@ public class Main {
                     /**
                      * Determine if the list is consistent
                      */
-                    output.add(isConsistent(phoneNumberList));
+                    output.add(ConsistencyChecker.isConsistent(phoneNumberList));
                     phoneNumberList.clear();
                 }else {
                     System.out.println("This amount of phone numbers is not valid. " +
@@ -69,7 +69,7 @@ public class Main {
             /**
              * Print final output
              */
-            printOutput(output);
+            ConsistencyChecker.printOutput(output);
         } else {
             System.out.println("The amount of test cases is not valid, it should be among 1 and 40 inclusive, we quit");
         }

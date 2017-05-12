@@ -1,4 +1,4 @@
-package com.abernal.util;
+package main.java.com.abernal.util;
 
 /**
  * Created by abernal on 5/12/17.

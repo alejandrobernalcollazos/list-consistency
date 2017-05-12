@@ -1,4 +1,4 @@
-package com.abernal.util;
+package main.java.com.abernal.util;
 
 import java.util.List;
 
